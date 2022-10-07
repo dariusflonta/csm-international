@@ -35,7 +35,7 @@ hr {
 .header {
     width:100%;
     height:100vh;
-    background-image:linear-gradient(rgba(0,0,90,0.85), rgba(0,0,0,0.95)), url(img/vest.jpg);
+    background-image:linear-gradient(rgba(0,0,90,0.75), rgba(0,0,0,0.95)), url(img/vest.jpg);
     background-size:cover;
     background-position:0;
     animation-name:title;
@@ -57,8 +57,8 @@ nav {
     overflow:hidden;
 }
 .logo {
-    width:200px;
-    margin:10px 0;
+    width:250px;
+    margin:8px 0;
 }
 nav ul {
     margin-top:2px;
@@ -78,6 +78,7 @@ nav ul li {
 .navlinks ul li a {
     text-decoration:none;
     display:block;
+    font-size:1.2rem;
     padding:10px 12px;
     color:rgb(0,0,185);
     font-weight:500;
@@ -144,7 +145,6 @@ nav ul li {
 }
 .about-p {
     margin:15px 5px;
-    
 }
 h2 {
     margin-bottom:20px;
@@ -159,11 +159,12 @@ h2 {
 p {
     margin:20px 20px;
     text-indent:10px;
+    line-height:1.2;
     letter-spacing:0.5px;
-    color:#222;
+    color:#2f2f2f;
     padding-bottom:15px;
-    font-size:16px;
     text-align:left;
+    font-size:1.3rem;
 }
 .about-p img {
     width:75%;
@@ -182,12 +183,12 @@ p {
     justify-content:space-between;
 }
 .row p {
-    font-size:0.8rem;
+    font-size:1rem;
 }
 .about-col {
     text-decoration:none;
     flex-basis:32%;
-    border-radius:10px;
+    border-radius:5px;
     margin-bottom:2%;
     padding:20px 12px;
     box-sizing:border-box;
@@ -298,7 +299,7 @@ p {
     transition:0.6s;
 }
 .layer:hover h3 {
-    top:35%;
+    top:50%;
     opacity:1;
 }
 
@@ -559,6 +560,9 @@ p {
 /*-----------------------------------RESPONSIVE----------------------------------*/
 
 @media screen and (max-width:900px) {
+    main {
+        background-color: #fff;
+    }
     .menu-btn {
         display:block;
     }
@@ -588,7 +592,7 @@ p {
         right:0;
     }
     .navlinks ul li a {
-        font-size:0.8empx;
+        font-size:1rem;
     }
     .despre-noi, .servicii, .location, .noutati, .terms, .conf, .personal {
         width:80%;
@@ -599,7 +603,7 @@ p {
         font-size:1.4rem;
     }
     .despre-noi p, .despre-noi p span, .servicii p {
-        font-size:0.8rem;
+        font-size:1rem;
         margin:20px auto;
         text-align:justify;
     }
@@ -661,14 +665,20 @@ p {
     }
     .approve li {
         margin-left:0.7rem;
-        font-size:0.8rem;
+        font-size:1rem;
     }
     .approve li i {
+        font-size:1rem;
+    }
+    .approve li span {
         font-size:1rem;
     }
     .about-col {
         max-width:85%;
         padding:6px 0 2px;
+    }
+    .about-col p {
+        font-size:0.8rem;
     }
     .about-col img {
         width:90%;
@@ -677,9 +687,13 @@ p {
     .layer {
         display:none;
     }
+    .client-col {
+        padding-bottom:1rem;
+    }
     .client-resp {
         display:block;
-        font-size:1rem;
+        font-size:0.7rem;
+        z-index:1;
         color:rgb(0,0,50);
     }
     .contact {
@@ -764,15 +778,15 @@ p {
         width:100%;
     }
     .text-box h1 {
-        font-size:24px;
+        font-size:1.8rem;
         text-transform:capitalize;
         text-shadow:10px 10px 0 2px #000;
         z-index:-1;
     }
     .text-box h3 {
-        font-size:18px;
+        font-size:1.3rem;
         font-weight:400;
-        
+        color:#9f9f9f;
     }
     .text-box h3 span {
         animation-name:title;
@@ -791,13 +805,16 @@ p {
         margin:2px;
     }
     .despre-noi, .servicii, .location, .noutati, .terms, .conf, .personal {
-        width:95%;
+        width:100%;
         margin:0 auto;
         padding:10px;
     }
     .about-p img {
         width:100%;
         height:50%;
+    } 
+    main p {
+        font-size:0.75rem;
     }
     .row {
         width:100%;
@@ -820,6 +837,7 @@ p {
         margin-bottom:4%;
         padding:10px 6px;
         box-sizing:border-box;
+        font-size:1rem;
     }
     .approve {
         width:100%;
@@ -978,7 +996,7 @@ p {
     position:relative;
     transform:translateY(250px);
     opacity:0;
-    transition:all 0.8s ease-out;
+    transition:all 0.5s ease-out;
 }
 .reveal.activeReveal {
     transform:translateY(0px);

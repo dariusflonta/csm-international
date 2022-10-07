@@ -78,12 +78,12 @@
         <div class="reveal">
         <p>De asemenea, societatea noastra dispune si de alte servicii menite în folosul clienților noștrii în îndeplinirea cu succes și în siguranță a propriilor atribuții:</p>
         <ul class="approve">
-            <li><i class="fa fa-check-circle"></i>Servicii de paza industriale, pentru birouri, protectia familiei si proprietatii dvs.</li>
-            <li><i class="fa fa-check-circle"></i>Servicii de escorta si garzi de corp</li>
-            <li><i class="fa fa-check-circle"></i>Servicii de securitate pentru activități sociale</li>
-            <li><i class="fa fa-check-circle"></i>Servicii de transport valori, servicii de curierat</li>
-            <li><i class="fa fa-check-circle"></i>Serviciu de escorte rutiere</li>
-            <li><i class="fa fa-check-circle"></i>Divizie de prevenire, protecție și apărare împotriva incendiilor</li>
+            <li><i class="fa fa-check-circle"></i><span>Servicii de paza industriale, pentru birouri, protectia familiei si proprietatii dvs.</span></li>
+            <li><i class="fa fa-check-circle"></i><span>Servicii de escorta si garzi de corp</span></li>
+            <li><i class="fa fa-check-circle"></i><span>Servicii de securitate pentru activități sociale</span></li>
+            <li><i class="fa fa-check-circle"></i><span>Servicii de transport valori, servicii de curierat</span></li>
+            <li><i class="fa fa-check-circle"></i><span>Serviciu de escorte rutiere</span></li>
+            <li><i class="fa fa-check-circle"></i><span>Divizie de prevenire, protecție și apărare împotriva incendiilor</span></li>
         </ul>
 
         <hr>
@@ -186,31 +186,7 @@
     </section>
     </main>
 
-    <script type="text/javascript">
-      var loader = document.getElementById("preloader");
-
-      window.addEventListener('load', function() {
-        loader.style.display = "none";
-      });
-
-    </script>
-
-    <script type="text/javascript">
-        window.addEventListener('scroll', reveal);
-
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-            for(var i = 0; i < reveals.length; i++){
-                var windowHeight = window.innerHeight;
-                var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 50;
-
-                if(revealtop < windowHeight - revealpoint) {
-                    reveals[i].classList.add('activeReveal');
-                }
-            }
-        }
-    </script>
+    <script src="app.js"></script>
     
 </body>
 </html>
